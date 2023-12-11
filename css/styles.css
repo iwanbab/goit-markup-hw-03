@@ -6,6 +6,17 @@ body {
     color: #434455;
     letter-spacing: normal;
     font-weight: 400;
+    width: 90rem;
+    height: 206.25rem;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 a {
     text-decoration: none;
@@ -17,6 +28,26 @@ address {
     font-style: normal;
 }
 /* header */
+.header {
+    display: flex;
+    align-items: center;
+    width: 90rem;
+    height: 4.5rem;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+.header-nav {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 2.5rem
+}
+.header-nav-list li {
+    display: inline-block;
+}
+.header-contact-item li{
+    display: inline-block;
+}
 .header-logo {
     color: #4D5AE5;
     font-family: 'Raleway', sans-serif;
@@ -58,8 +89,13 @@ address {
 /* hero section */
 .hero {
     background-color: #2E2F42;
+    width: 90rem;
+    height: 37.5rem;
+    flex-shrink: 0;
 }
 .hero-title {
+    width: 31rem;
+    height: 7.5rem;
     color: #FFFFFF;
     text-align: center;
     font-size: 56px;
@@ -76,12 +112,19 @@ address {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    display: inline-flex;
+    padding: 1rem 2rem;
+    align-items: flex-start;
+    gap: 0.625rem;
 }
 .hero-btn:hover,
 .hero-btn:focus{
     background: #404BBF;
 }
 /* benefits section */
+.benefits-list {
+    display: flex;
+}
 .benefits-title {
     color: #2E2F42;
     font-size: 20px;
@@ -97,6 +140,9 @@ address {
 /* team section */
 .team {
     background-color: #F4F4FD;
+}
+.team-list{
+    display: flex;
 }
 .team-title {
     color: #2E2F42;
@@ -126,6 +172,9 @@ address {
 .portfolio {
   background-color: #FFF;
 }
+.portfolio-list{
+    display: flex;
+}
 .portfolio-title {
     color: #2E2F42;
     text-align: center;
@@ -151,6 +200,7 @@ address {
 /* footer */
 .footer {
     background-color: #2E2F42;
+    
 }
 .footer-logo {
     color: #4D5AE5;
