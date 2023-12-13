@@ -9,45 +9,74 @@ body {
     width: 90rem;
     height: 206.25rem;
 }
+
 img{
     display: block;
     max-width: 100%;
+    height: auto;
 }
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+
 a {
     text-decoration: none;
 }
+
 ul {
     list-style:none;
 }
+
 address {
     font-style: normal;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1158px;
+    padding-left: auto;  
+    padding-right: auto;  
+    margin-left: auto; 
+    margin-right: auto;
+}
+
 /* header */
 .header {
     display: flex;
+    width: 1440px;
+    height: 72px;
     align-items: center;
-    width: 90rem;
-    height: 4.5rem;
-    flex-shrink: 0;
-    justify-content: center;
 }
 
-.header-nav {
+.header-logo .header-logo-text {
+    display: inline-flex;
+    height: 1.5rem;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.header-nav-list {
     display: inline-flex;
     align-items: flex-start;
-    gap: 2.5rem
+    gap: 2.5rem;
 }
+
 .header-nav-list li {
     display: inline-block;
+    padding: 1.5 rem 0;
 }
+
 .header-contact-item li{
     display: inline-block;
 }
+
 .header-logo {
     color: #4D5AE5;
     font-family: 'Raleway', sans-serif;
@@ -56,7 +85,12 @@ address {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    width: max-content 115px;
+    height: 24px;
+    top: 24px;
+    left: 156px;
 }
+
 .header-logo-text {
     color: #2E2F42;
     font-family: 'Raleway';
@@ -66,25 +100,30 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;      
 }
+
 .header-nav-link {
     color:#2E2F42;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.02em;
 }
+
 .header-nav-link:hover,
 .header-nav-link:focus{
     color:#404bbf;
 }
+
 .header-contact-link {
     color: #434455;
     line-height: 24px;
     letter-spacing: 0.02em;
 }
+
 .header-contact-link:hover,
 .header-contact-link:focus{
     color: #404BBF;
 }
+
 /* main */
 /* hero section */
 .hero {
@@ -93,6 +132,7 @@ address {
     height: 37.5rem;
     flex-shrink: 0;
 }
+
 .hero-title {
     width: 31rem;
     height: 7.5rem;
@@ -103,6 +143,7 @@ address {
     line-height: 1.07;
     letter-spacing: 0.02em;
 }
+
 .hero-btn {
     color: #FFFFFF;
     cursor: pointer;
@@ -117,14 +158,17 @@ address {
     align-items: flex-start;
     gap: 0.625rem;
 }
+
 .hero-btn:hover,
 .hero-btn:focus{
     background: #404BBF;
 }
+
 /* benefits section */
 .benefits-list {
     display: flex;
 }
+
 .benefits-title {
     color: #2E2F42;
     font-size: 20px;
@@ -132,18 +176,22 @@ address {
     line-height: 24px;
     letter-spacing: 0.02em;
 }
+
 .benefits-discription {
     color: #434455;
     line-height: 24px;
     letter-spacing: 0.02em;
 }
+
 /* team section */
 .team {
     background-color: #F4F4FD;
 }
+
 .team-list{
     display: flex;
 }
+
 .team-title {
     color: #2E2F42;
     text-align: center;
@@ -153,9 +201,11 @@ address {
     letter-spacing: 0.02em;
     text-transform: capitalize;
 }
+
 .team-list-item {
     background-color: #FFFFFF;
 }
+
 .team-name {
     color: #2E2F42;
     font-size: 20px;
@@ -163,18 +213,33 @@ address {
     line-height: 24px;
     letter-spacing: 0.02em;
 }
+
 .team-name-position {
     color: #434455;
     line-height: 24px;
     letter-spacing: 0.02em;
 }
+
 /* portfolio section */
 .portfolio {
-  background-color: #FFF;
+    background-color: #FFF; 
 }
+
 .portfolio-list{
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-shrink: 0;
+    gap: 2rem;
+    justify-content: center;
 }
+
+.portfolio-list-item{
+    width: 22.5rem;
+    height: 26.25rem;
+    padding-bottom: 2rem;
+}
+
 .portfolio-title {
     color: #2E2F42;
     text-align: center;
@@ -184,6 +249,7 @@ address {
     letter-spacing: 0.02em;
     text-transform: capitalize;
 }
+
 .portfolio-project-title {
     color: #2E2F42;
     font-size: 20px;
@@ -191,17 +257,20 @@ address {
     line-height: 24px;
     letter-spacing: 0.02em;
 }
+
 .portfolio-project-type {
     color: #434455;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
 }
+
 /* footer */
 .footer {
     background-color: #2E2F42;
     
 }
+
 .footer-logo {
     color: #4D5AE5;
     font-family: 'Raleway', sans-serif;
@@ -211,6 +280,7 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
+
 .footer-logo-text {
     color: #F4F4FD;
     font-family: 'Raleway';
@@ -219,8 +289,10 @@ address {
     line-height: 21px;
     text-transform: uppercase;
 }
+
 .footer-text {
     color: #F4F4FD;
     line-height: 24px;
     letter-spacing: 0.02em;
-}   
+}  
+ 
