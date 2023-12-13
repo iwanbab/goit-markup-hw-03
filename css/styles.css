@@ -39,42 +39,39 @@ p {
     padding: 0;
 }
 
-.container {
-    max-width: 1158px;
-    padding-left: auto;  
-    padding-right: auto;  
-    margin-left: auto; 
-    margin-right: auto;
-}
-
 /* header */
 .header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
     display: flex;
-    width: 1440px;
-    height: 72px;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header-nav {
+    display: flex;
     align-items: center;
 }
 
 .header-logo .header-logo-text {
-    display: inline-flex;
-    height: 1.5rem;
-    align-items: center;
-    flex-shrink: 0;
+margin-right: 76px;
 }
 
 .header-nav-list {
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 2.5rem;
+    display: flex;
+    gap: 40px; 
 }
 
-.header-nav-list li {
-    display: inline-block;
-    padding: 1.5 rem 0;
+.header-nav-item {
+    padding: 24px 0;
 }
 
-.header-contact-item li{
-    display: inline-block;
+.header-contact-list {
+    display: flex;
+    gap: 40px;
 }
 
 .header-logo {
