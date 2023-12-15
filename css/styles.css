@@ -67,10 +67,6 @@ margin-right: 76px;
     padding: 24px 0;
 }
 
-.header-contact{
-    margin-left: auto;
-}
-
 .header-contact-list {
     display: flex;
     gap: 40px;
@@ -278,7 +274,7 @@ margin-right: 76px;
     row-gap: 48px;
 }
 
-.portfolio-list li {
+.portfolio-list-item {
     width: calc((100% - 48px) / 3);
 }
 
