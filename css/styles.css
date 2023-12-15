@@ -44,8 +44,10 @@ p {
     border-bottom: 1px solid #e7e9fc;
 }
 
-.container {
+.header-container {
     display: flex;
+}
+.container {
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
@@ -69,7 +71,7 @@ margin-right: 76px;
     padding: 24px 0;
 }
 
-.header-contact {
+.header-contact{
     margin-left: auto;
 }
 
@@ -132,9 +134,11 @@ margin-right: 76px;
     padding: 188px 0;
 }
 
+.hero-container {
+    text-align: center;   
+}
 .hero-title {
     color: #FFFFFF;
-    text-align: center;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
