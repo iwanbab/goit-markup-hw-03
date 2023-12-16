@@ -49,9 +49,8 @@ p {
 
 .container-header {
     display: flex;
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px
+    align-items: center;
+    
 }
 
 .header-logo {
@@ -106,6 +105,8 @@ margin-right: 76px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.02em;
+    display: block;
+    padding-topL;
 }
 
 .header-nav-link:hover,
